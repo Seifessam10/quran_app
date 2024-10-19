@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/core/assets_manger.dart';
-import 'package:quran_app/core/colors_manger.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/quran_tab/widgets/quran_column_header.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/quran_tab/widgets/sura_name_widget.dart';
 
@@ -240,8 +239,6 @@ class QuranTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
     return Column(
       children: [
         Expanded(flex: 1, child: Image.asset(AssetsManger.quranHeader)),

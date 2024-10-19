@@ -16,7 +16,6 @@ class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
   Widget build(BuildContext context) {
     // ModalRoute.of(context)?.settings.arguments   --> Receive data from files
     SuraItem suraItem = ModalRoute.of(context)?.settings.arguments as SuraItem;
-    // TODO: implement build
 
     if (verses.isEmpty) readQuranFile(suraItem.index + 1);
     return Stack(
