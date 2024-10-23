@@ -35,6 +35,28 @@ class MyTheme {
             fontSize: 21, fontWeight: FontWeight.bold, color: Colors.white),
         titleMedium: const TextStyle(
             fontSize: 21, fontWeight: FontWeight.bold, color: Colors.black),
+          labelMedium: TextStyle(
+              fontSize: 20,
+              color: ColorsManger.goldColor,
+              fontWeight: FontWeight.w500),
+          labelSmall: TextStyle(
+              color: ColorsManger.goldColor,
+              fontSize: 18,
+              fontWeight: FontWeight.w500),
+          displayMedium: TextStyle(
+              color: ColorsManger.goldColor,
+              fontSize: 21,
+              fontWeight: FontWeight.w400)),
+      bottomSheetTheme: BottomSheetThemeData(
+        elevation: 10,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(15), topRight: Radius.circular(15)),
+        ),
+        showDragHandle: true,
+        dragHandleColor: ColorsManger.goldColor,
+        backgroundColor: Colors.white,
+        modalElevation: 10,
       ));
   static ThemeData darkTheme = ThemeData(
     appBarTheme: const AppBarTheme(
