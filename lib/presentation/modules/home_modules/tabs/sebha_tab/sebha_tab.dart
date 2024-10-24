@@ -112,7 +112,7 @@ class _SebhaTabState extends State<SebhaTab> {
           ),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  backgroundColor: ColorsManger.goldColor),
+                  backgroundColor: ColorsManger.lightThemeColor),
               onPressed: () {
                 setState(() {
                   turns += 1 / 8;

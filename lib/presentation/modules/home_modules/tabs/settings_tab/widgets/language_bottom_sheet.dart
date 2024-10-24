@@ -18,7 +18,7 @@ class _LanguageBottomSheetState extends State<LanguageBottomSheet> {
         const SizedBox(
           height: 10,
         ),
-        buildUnSelectedItem('Arabic')
+        buildUnSelectedItem('العربيه')
       ]),
     );
   }
@@ -33,7 +33,7 @@ class _LanguageBottomSheetState extends State<LanguageBottomSheet> {
         const Spacer(),
         Icon(
           Icons.check,
-          color: ColorsManger.goldColor,
+          color: ColorsManger.lightThemeColor,
           size: 30,
         )
       ],

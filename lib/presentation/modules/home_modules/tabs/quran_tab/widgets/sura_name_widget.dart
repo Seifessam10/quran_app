@@ -31,7 +31,7 @@ class SuraNameWidget extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headlineMedium)),
             VerticalDivider(
-              color: ColorsManger.goldColor,
+              color: ColorsManger.lightThemeColor,
               thickness: 3,
             ),
             Expanded(

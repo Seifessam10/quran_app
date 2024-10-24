@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:quran_app/core/colors_manger.dart';
-import 'package:quran_app/core/strings_manger.dart';
 
 class QuranColumnHeader extends StatelessWidget {
   const QuranColumnHeader({super.key});
@@ -22,16 +22,16 @@ class QuranColumnHeader extends StatelessWidget {
           children: [
             Expanded(
                 child: Text(
-              StringsManger.chapterName,
+              AppLocalizations.of(context)!.chapterName,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineMedium,
             )),
             VerticalDivider(
-              color: ColorsManger.goldColor,
+              color: ColorsManger.lightThemeColor,
               thickness: 3,
             ),
             Expanded(
-                child: Text(StringsManger.versesNumber,
+                child: Text(AppLocalizations.of(context)!.versesNumber,
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headlineMedium)),
           ],

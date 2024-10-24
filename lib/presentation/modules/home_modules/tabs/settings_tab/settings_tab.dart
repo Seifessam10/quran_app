@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/settings_tab/widgets/language_bottom_sheet.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/settings_tab/widgets/theme_bottom_sheet.dart';
 
@@ -12,7 +13,7 @@ class SettingsTab extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Theme',
+            AppLocalizations.of(context)!.theme,
             style: Theme.of(context).textTheme.labelMedium,
           ),
           const SizedBox(
@@ -23,7 +24,7 @@ class SettingsTab extends StatelessWidget {
               showThemeBottomSheet(context);
             },
             child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 width: double.infinity,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -31,7 +32,7 @@ class SettingsTab extends StatelessWidget {
                     border: Border.all(
                         color: Theme.of(context).dividerColor, width: 2)),
                 child: Text(
-                  'Light',
+                  AppLocalizations.of(context)!.light,
                   style: Theme.of(context).textTheme.labelSmall,
                 )),
           ),
@@ -39,7 +40,7 @@ class SettingsTab extends StatelessWidget {
             height: 25,
           ),
           Text(
-            'Language',
+            AppLocalizations.of(context)!.language,
             style: Theme.of(context).textTheme.labelMedium,
           ),
           const SizedBox(
@@ -50,7 +51,7 @@ class SettingsTab extends StatelessWidget {
               showLanguageBottomSheet(context);
             },
             child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 width: double.infinity,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -58,7 +59,7 @@ class SettingsTab extends StatelessWidget {
                     border: Border.all(
                         color: Theme.of(context).dividerColor, width: 2)),
                 child: Text(
-                  'English',
+                  AppLocalizations.of(context)!.english,
                   style: Theme.of(context).textTheme.labelSmall,
                 )),
           )
