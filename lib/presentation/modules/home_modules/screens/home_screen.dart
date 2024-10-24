@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:quran_app/core/assets_manger.dart';
-import 'package:quran_app/core/strings_manger.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/hadith_tab/hadith_tab.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/quran_tab/quran_tab.dart';
 import 'package:quran_app/presentation/modules/home_modules/tabs/radio_tab/radio_tab.dart';
@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
               image: AssetImage(AssetsManger.mainBgLight), fit: BoxFit.fill)),
       child: Scaffold(
         appBar: AppBar(
-          title: Text(StringsManger.appTittle),
+          title: Text(AppLocalizations.of(context)!.appTitle),
         ),
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: selectedIndex,
@@ -45,19 +45,19 @@ class _HomeScreenState extends State<HomeScreen> {
             items: [
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage(AssetsManger.quranIcon)),
-                  label: StringsManger.quranLabel),
+                  label: AppLocalizations.of(context)!.quranTab),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage(AssetsManger.hadithIcon)),
-                  label: StringsManger.hadithLabel),
+                  label: AppLocalizations.of(context)!.hadithTab),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage(AssetsManger.sebhaIcon)),
-                  label: StringsManger.sebhaLabel),
+                  label: AppLocalizations.of(context)!.sebhaTab),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage(AssetsManger.radioIcon)),
-                  label: StringsManger.radioLabel),
+                  label: AppLocalizations.of(context)!.radioTab),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.settings),
-                  label: StringsManger.settingsLabel),
+                  icon: const Icon(Icons.settings),
+                  label: AppLocalizations.of(context)!.settingsTab),
             ]),
         body: tabs[selectedIndex],
       ),

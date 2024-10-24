@@ -26,11 +26,11 @@ class _HadithTabState extends State<HadithTab> {
             child: hadithList.isEmpty
                 ? Center(
                     child: CircularProgressIndicator(
-                    color: ColorsManger.goldColor,
+                    color: ColorsManger.lightThemeColor,
                   ))
                 : ListView.separated(
                     separatorBuilder: (context, index) => Divider(
-                        color: ColorsManger.goldColor,
+                        color: ColorsManger.lightThemeColor,
                         height: 10,
                         thickness: 3),
                     itemBuilder: (context, index) =>
